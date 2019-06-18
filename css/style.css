@@ -1,0 +1,214 @@
+/* fontstyle */
+* {
+  font-family: verdana;
+}
+
+h1 {
+  color: #21038c;
+}
+
+p {
+  color: #210a94;
+}
+
+h2 {
+  color: #621704;
+  margin-left: 1%;
+}
+
+/* header */
+.d1 {
+  display: flex;
+  flex-direction: row;
+  border-style: groove;
+  border: 2px solid #ddd;
+  width: 98%;
+  margin: 1% auto;
+  box-shadow: 2px 1px 2px 1px #020303;
+}
+
+.d1child1 {
+  width: 50%;
+}
+
+/* logo */
+.logo {
+  width: 45%;
+}
+
+/* logotext  */
+.d1child2 {
+  width: 50%;
+  text-align: end;
+  padding-right: 1%;
+}
+
+/* poster */
+.poster {
+  width: 100%;
+  height: 500px;
+}
+
+/* divison1 */
+.d2 {
+  display: flex;
+  flex-direction: row;
+  border-style: groove;
+  border: 2px solid #ddd;
+  width: 98%;
+  margin: 1% auto;
+  box-shadow: 2px 1px 2px 1px #020303;
+}
+
+/* division3 */
+.d3 {
+  background: linear-gradient(160deg, #704b00 0%, #196161 100%);
+  width: 98%;
+  border: 2px solid #020303;
+  display: flex;
+  flex-direction: row;
+  padding: 1%;
+}
+
+/* bikestyles */
+.d3bike1, .d3bike2, .d3bike3 {
+  width: 30%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 25px;
+  border-style: groove;
+  border: 2px solid #ddd;
+  text-align: center;
+  box-shadow: 1px 2px 1px 2px #020303;
+  padding: 1%;
+  margin: 1%;
+}
+
+footer p {
+  color: #fff;
+}
+
+/* bikeimages */
+.bikepic {
+  width: 400px;
+  height: 300px;
+}
+
+/* img dimension */
+.d3bike1 img {
+  border-radius: 25px;
+  border-style: groove;
+  border: 2px solid #ddd;
+}
+
+.d3bike2 img {
+  border-radius: 25px;
+  border-style: groove;
+  border: 2px solid #ddd;
+}
+
+.d3bike3 img {
+  border-radius: 25px;
+  border-style: groove;
+  border: 2px solid #ddd;
+}
+
+/* animationStyle */
+.d3bike1:hover, .d3bike2:hover, .d3bike3:hover {
+  border: solid 1px #595959;
+  -moz-box-shadow: 1px 1px 5px #595959;
+  -webkit-box-shadow: 1px 1px 5px #595959;
+  box-shadow: 1px 1px 1px #595959;
+  background-color: #ddd;
+}
+
+.bikepic {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.bikepic:hover {
+  transform: scale(1.05);
+}
+
+/* buttonstyle */
+button {
+  background-color: #0000d6;
+  border-radius: 30px;
+  padding: 1%;
+  color: #fff;
+}
+
+footer {
+  background-color: #4d0665;
+  text-align: center;
+  color: #000;
+}
+
+/* mobileview */
+@media only screen and (min-width:320px) and (max-width: 767px) {
+  .d1child1, .d1child2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* logodivison */
+  .d1 {
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  /* bannerdivision */
+  .poster {
+    height: 100%;
+  }
+
+  /* lastdivision */
+  .d3 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* bikeimages */
+  .d3bike1, .d3bike2, .d3bike3 {
+    width: 100%;
+  }
+
+  .bikepic {
+    width: 100%;
+    height: 70%;
+  }
+}
+
+/* tabletview */
+@media only screen and (min-width:768px) and (max-width: 1023px) {
+  .d3bike1, .d3bike2, .d3bike3 {
+    width: 40%;
+    padding: 2%;
+    margin: 2%;
+  }
+
+  .poster {
+    height: 100%;
+  }
+
+  /* lastdivision */
+  .d3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .bikepic {
+    width: 100%;
+    height: 69%;
+  }
+}
